@@ -1,0 +1,54 @@
+body {
+    background-color: #EAE8FE;
+    margin: 0;
+}
+
+.whiteBox {
+    background-color: #FFF;
+    width: 360px;
+    padding: 0 27px;
+    box-sizing: border-box;
+}
+.whiteBox .first {
+    padding-top: 31px;
+}
+
+
+.colaBoxes {
+    display: grid;
+    grid-template-rows: repeat(2, 130px);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;   
+}
+.colaBoxes > div {
+    width: 94px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px -3px rgba(0,0,0,1);
+    text-align: center;
+    padding-bottom: 9px;
+}
+.colaBoxes > div:focus {
+    outline: #0e7be3;
+}
+
+.colaBoxes > div > img {
+    display: inline-block;
+    width: 36px;
+    height: 65px;
+}
+.colaBoxes > div > p {
+    color: #333333;
+    font-size: 9px;
+    margin: 6px 0 7px 0;
+}
+.colaBoxes > div > span {
+    display: inline-block;
+    background-color: #0e7be3;
+    width: 70px;
+    height: 22px;
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 22px;
+    border-radius: 50px;
+}
