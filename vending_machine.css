@@ -1,6 +1,11 @@
 body {
     background-color: #EAE8FE;
+    font-family: 'Noto Sans KR', sans-serif;
     margin: 0;
+}
+
+header {
+    margin-bottom: 67px;
 }
 
 .whiteBox {
@@ -9,46 +14,158 @@ body {
     padding: 0 27px;
     box-sizing: border-box;
 }
-.whiteBox .first {
+.whiteBox.first {
     padding-top: 31px;
+    padding-bottom: 28px;
+}
+.whiteBox.second {
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+.whiteBox.third {
+    padding-top: 25px;
 }
 
-
+/* whiteBox first 1/2 */
 .colaBoxes {
     display: grid;
     grid-template-rows: repeat(2, 130px);
     grid-template-columns: repeat(3, 1fr);
-    gap: 12px;   
+    gap: 12px;
+    margin-bottom: 20px;
 }
-.colaBoxes > div {
+/* 버튼 타입 지정하기 */
+.btn { 
+    background-color: #FFF;
     width: 94px;
     border-radius: 10px;
+    border-style: none;
     box-shadow: 0 0 5px -3px rgba(0,0,0,1);
-    text-align: center;
-    padding-bottom: 9px;
+    padding: 11px 0 9px ;
+    cursor: pointer;
 }
-.colaBoxes > div:focus {
-    outline: #0e7be3;
-}
-
-.colaBoxes > div > img {
-    display: inline-block;
+.colaBoxes > .btn > img {
     width: 36px;
     height: 65px;
+    margin-bottom: 5px;
+    vertical-align: bottom;
 }
-.colaBoxes > div > p {
-    color: #333333;
+.colaBoxes > .btn > strong {
+    display: block;
+    font-weight: 500;
     font-size: 9px;
-    margin: 6px 0 7px 0;
+    line-height: 13px;
 }
-.colaBoxes > div > span {
+.colaBoxes > .btn > span {
     display: inline-block;
-    background-color: #0e7be3;
+    background-color: #6327FE;
     width: 70px;
     height: 22px;
+    margin-top: 5px;
+    border-radius: 50px;
     color: #FFF;
     font-size: 12px;
     font-weight: 500;
     line-height: 22px;
-    border-radius: 50px;
+}
+
+/* whiteBox first 2/2 */
+.getColaContainer{
+    display: grid;
+    grid-template-rows: 1fr 1fr 106px;
+    grid-template-columns: 200px 1fr;
+    gap: 12px;
+}
+
+.showValue {
+    background-color: #EAE8FE;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 6px 10px
+}
+
+.btn.white {
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 19px;
+    padding: 6px 0 7px 0;
+}
+
+#inputValue, .getDrinkBox {
+    border: 1px solid #BDBDBD;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 19px;
+    padding: 5px 0 6px 5px;
+    box-sizing: border-box;
+}
+#inputValue::placeholder {
+    color: #BDBDBD;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 19px;
+}
+
+.getDrinkBox {
+    background-color: #EAE8FE;
+    padding: 12px 12px 0;
+    overflow: scroll;
+}
+.getDrinkInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFF;
+    padding: 0 8px 0 10px;
+    border-radius: 4px;
+    margin-bottom: 6px;
+}
+.getDrinkInfo_img {
+    width: 18px;
+    height: 33px;
+}
+.getDrinkInfo > span > p {
+    display: inline;
+    color: #333333;
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 13px;
+}
+.countNum {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.btn.violet {
+    background-color: #6327FE;
+    border-radius: 4px;
+    color: #FFF;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 19px;
+    padding: 0;
+}
+
+/* whiteBox second */
+
+/* whiteBox third */
+.text-getDrinks {
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 0 13px;
+}
+.text-total {
+    text-align: right;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 17px;
+    margin: 6px 0 0;
 }

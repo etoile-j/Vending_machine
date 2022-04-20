@@ -6,48 +6,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>vending_machine</title>
     <link rel="stylesheet" href="vending_machine.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
-        <img src="">
+        <img src="img/logo.png" width="386px">
     </header>
     <main>
         <section class="whiteBox first">
             <article class="colaBoxes">
-                <div>
-                    <img src="img/original_cola.png">
-                    <p>Original_Cola</p>
+                <button class="btn">
+                    <img src="img/original_cola.png" alt="">
+                    <strong>Original_Cola</strong>
                     <span>1000원</span>
-                </div>
-                <div>
-                    <img src="img/original_cola.png" width="36px" height="65px">
-                    <p>Original_Cola</p>
+                </button>
+                <button class="btn">
+                    <img src="img/violet_cola.png" alt="">
+                    <strong>Violet_Cola</strong>
                     <span>1000원</span>
-                </div>
-                <div>
-                    <img src="img/yellow_cola.png" width="36px" height="65px">
-                    <p>Yellow_Cola</p>
+                </button>
+                <button class="btn">
+                    <img src="img/yellow_cola.png" alt="">
+                    <strong>Yellow_Cola</strong>
                     <span>1000원</span>
-                </div>
-                <div>
-                    <img src="img/cool_cola.png" width="36px" height="65px">
-                    <p>Cool_Cola</p>
+                </button>
+                <button class="btn">
+                    <img src="img/cool_cola.png" alt="">
+                    <strong>Cool_Cola</strong>
                     <span>1000원</span>
-                </div>
-                <div>
-                    <img src="img/original_cola.png" width="36px" height="65px">
-                    <p>Cool_Cola</p>
+                </button>
+                <button class="btn">
+                    <img src="img/green_cola.png" alt="">
+                    <strong>Green_Cola</strong>
                     <span>1000원</span>
-                </div>
-                <div>
-                    <img src="img/original_cola.png" width="36px" height="65px">
-                    <p>Cool_Cola</p>
+                </button>
+                <button class="btn">
+                    <img src="img/orange_cola.png" alt="">
+                    <strong>Orange_Cola</strong>
                     <span>1000원</span>
+                </button>
+            </article>
+            <article class="getColaContainer">
+                <div class="showValue">잔액 : </div>
+                <button class="btn white">거스름돈 반환</button>
+                <input type="text" id="inputValue" placeholder="입금액 입력">
+                <button class="btn white">입금</button>
+                <div class="getDrinkBox">
+                    <div class="getDrinkInfo">
+                        <span>
+                            <img src="img/original_cola.png" class="getDrinkInfo_img">
+                            <p>Original_Cola</p>
+                        </span>
+                        <span class="countNum">1</span>
+                    </div>
                 </div>
+                <button class="btn violet">획득</button>
             </article>
         </section>
-        <section class="whiteBox second"></section>
-        <section class="whiteBox third"></section>
+        <section class="whiteBox second">
+            <div class="showValue">소지금 : </div>
+        </section>
+        <section class="whiteBox third">
+            <h2 class="text-getDrinks">획득한 음료</h2>
+            <div class="getDrinkBox">
+                <div class="getDrinkInfo">
+                    <span>
+                        <img src="img/original_cola.png" class="getDrinkInfo_img">
+                        <p>Original_Cola</p>
+                    </span>
+                    <span class="countNum">1</span>
+                </div>
+            </div>
+            <p class="text-total">총금액 : 9000 원</p>
+        </section>
     </main>
 </body>
 </html>
