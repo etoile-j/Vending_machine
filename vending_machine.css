@@ -5,7 +5,14 @@ body {
 }
 
 header {
+    text-align: center;
+}
+header > img {
     margin-bottom: 67px;
+}
+
+main {
+    text-align: center;
 }
 
 .whiteBox {
@@ -52,6 +59,7 @@ header {
 }
 .colaBoxes > .btn > strong {
     display: block;
+    color: #333333;
     font-weight: 500;
     font-size: 9px;
     line-height: 13px;
@@ -85,7 +93,9 @@ header {
     line-height: 20px;
     padding: 6px 10px
 }
-
+.text_showValue {
+    float: right;
+}
 .btn.white {
     border-radius: 4px;
     font-style: normal;
@@ -121,25 +131,40 @@ header {
     align-items: center;
     justify-content: space-between;
     background-color: #FFF;
-    padding: 0 8px 0 10px;
+    text-align: left;
+    width: 100%;
+    padding: 6px 8px 7px 10px;
+    border: none;
     border-radius: 4px;
     margin-bottom: 6px;
+    cursor: pointer;
 }
 .getDrinkInfo_img {
     width: 18px;
     height: 33px;
 }
-.getDrinkInfo > span > p {
-    display: inline;
+.getDrinkInfo > span {
+    display: flex;
+    align-items: center;
+}
+.getDrinkInfo > span > strong {
     color: #333333;
+    margin-left: 9px;
     font-weight: 500;
     font-size: 9px;
     line-height: 13px;
 }
 .countNum {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
 }
 
 .btn.violet {
@@ -168,4 +193,7 @@ header {
     font-size: 12px;
     line-height: 17px;
     margin: 6px 0 0;
+}
+.getDrinkBox.long {
+    height: 364px;
 }
