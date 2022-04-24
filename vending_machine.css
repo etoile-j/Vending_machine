@@ -12,7 +12,10 @@ header > img {
 }
 
 main {
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 28px;
 }
 
 .whiteBox {
@@ -25,7 +28,14 @@ main {
     padding-top: 31px;
     padding-bottom: 28px;
 }
+.whiteBox_sencondThird {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 .whiteBox.second {
+    display: inline;
+    height: 50px;
     padding-top: 9px;
     padding-bottom: 9px;
 }
@@ -51,6 +61,10 @@ main {
     padding: 11px 0 9px ;
     cursor: pointer;
 }
+.btn:active {
+    outline: 3px solid #6327FE;
+}
+
 .colaBoxes > .btn > img {
     width: 36px;
     height: 65px;
@@ -192,8 +206,21 @@ main {
     font-weight: 500;
     font-size: 12px;
     line-height: 17px;
-    margin: 6px 0 0;
+    margin: 6px 0 26px;
 }
 .getDrinkBox.long {
     height: 364px;
+}
+
+/* 미디어쿼리 */
+@media screen and (max-width:719px) {
+    body {
+        background-color: #FFF;
+    }
+    header > img {
+        margin-bottom: 0px;
+    }
+    main {
+        gap: 0px;
+    }
 }
