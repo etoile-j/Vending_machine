@@ -1,3 +1,13 @@
+.ir {
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    text-indent: -9999px;
+    line-height: 0;
+    font-size: 1px;
+    color: transparent;
+}
+
 body {
     background-color: #EAE8FE;
     font-family: 'Noto Sans KR', sans-serif;
@@ -9,6 +19,7 @@ header {
 }
 header > img {
     margin-bottom: 67px;
+    width: 386px;
 }
 
 main {
@@ -42,6 +53,7 @@ main {
 .whiteBox.third {
     padding-top: 25px;
 }
+
 
 /* whiteBox first 1/2 */
 .colaBoxes {
@@ -201,7 +213,7 @@ main {
     line-height: 20px;
     margin: 0 0 13px;
 }
-.text-total {
+.total_text {
     text-align: right;
     font-weight: 500;
     font-size: 12px;
