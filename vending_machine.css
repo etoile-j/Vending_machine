@@ -103,6 +103,19 @@ main {
     line-height: 22px;
 }
 
+.btn.soldout::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 94px;
+    height: 100%;
+    top: -63px;
+    background: no-repeat center/ 94px 130px url('img/soldout.png');
+    border-radius: 10px;
+    z-index: 10;
+    opacity: 0.8;
+}
+
 /* whiteBox first 2/2 */
 .getColaContainer{
     display: grid;
@@ -234,5 +247,9 @@ main {
     }
     main {
         gap: 0px;
+    }
+
+    .btn.soldout::before {
+        top: -130px;
     }
 }
