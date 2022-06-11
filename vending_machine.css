@@ -133,8 +133,17 @@ main {
     line-height: 20px;
     padding: 6px 10px
 }
+.restMoney {
+    float: right;
+    padding-right: 3px;
+}
+
 .text_showValue {
     float: right;
+}
+.baseMoney {
+    float: right;
+    padding-right: 3px;
 }
 .btn.white {
     border-radius: 4px;

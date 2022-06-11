@@ -53,10 +53,10 @@
             </article>
             <article class="getColaContainer">
                 <h2 class="ir">입금액, 잔액 관련칸</h2>
-                <div class="showValue">잔액 : <span class="text_showValue">원</span></div>
-                <button class="btn white">거스름돈 반환</button>
+                <div class="showValue">잔액 : <span class="text_showValue">원</span><span class="restMoney">0</span></div>
+                <button class="btn white" id="returnRestBtn">거스름돈 반환</button>
                 <input type="text" id="inputValue" placeholder="입금액 입력">
-                <button class="btn white">입금</button>
+                <button class="btn white" id="paymentBtn">입금</button>
                 <div class="getDrinkBox">
                     <button type="button" class="getDrinkInfo">
                         <span>
@@ -66,13 +66,13 @@
                         <span class="countNum">1</span>
                     </button>
                 </div>
-                <button type="button" class="btn violet">획득</button>
+                <button type="button" class="btn violet" id="getBtn">획득</button>
             </article>
         </section>
         <div class="whiteBox_sencondThird">
         <section class="whiteBox second">
             <h2 class="ir">현재 가진 금액</h2>
-            <div class="showValue">소지금 : <span class="text_showValue">원</span></div>
+            <div class="showValue">소지금 : <span class="text_showValue">원</span><span class="baseMoney">0</span></div>
         </section>
         <section class="whiteBox third">
             <h2 class="text-getDrinks">획득한 음료</h2>
@@ -89,5 +89,6 @@
         </section>
         </div>
     </main>
+    <script src="vending.js"></script>
 </body>
 </html>
